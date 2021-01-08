@@ -30,7 +30,7 @@ $texto: #3B3B3B;
 $morado: #8847E2;
 
 .cont__Productos{
-    width: 100%;
+    width: 345px;
     height: 500px;
     display: flex;
     justify-content: space-between;
