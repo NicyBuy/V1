@@ -1,30 +1,56 @@
 <template>
-  <div id="nav">
+<div class="fondo">
+<Nav/>
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
   <router-view/>
+</div>
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import Nav from '@/components/Nav.vue'
+export default {
+  components: {
+    Nav,
+  },
 }
+</script>
 
-#nav {
-  padding: 30px;
-}
+<style lang="scss" scoped>
+// VARS
+$gris-0: #EBEBEB ;
+$gris-1: #DEDEDE;
+$gris-2: #B9B9B9;
+$gris-3: #878787;
+$fondo: #F6F6F6;
+$texto: #3B3B3B;
+$morado: #8847E2;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.fondo{
+  background: $fondo;
 }
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+// }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+// #nav {
+//   padding: 30px;
+// }
+
+// #nav a {
+//   font-weight: bold;
+//   color: #2c3e50;
+// }
+
+// #nav a.router-link-exact-active {
+//   color: #42b983;
+// }
+
 </style>
