@@ -5,7 +5,7 @@
       </div>
 
       <div class="Nombre">
-          NICYBUY
+          NICYBUY Tomasito del rio
       </div>
   </nav>
 </template>

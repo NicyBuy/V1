@@ -4,7 +4,7 @@
   </div>
   <div class="main">
     <div class="contenido">
-      <h2>LO MAS NUEVO</h2>
+      <h2>Equisde con dde</h2>
 
       <div class="cont__lo-mas-nuevo">
         <ContProductos />
