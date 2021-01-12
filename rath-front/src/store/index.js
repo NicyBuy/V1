@@ -6,6 +6,9 @@ export default createStore({
   mutations: {
   },
   actions: {
+    GetProducts(){
+      
+    }
   },
   modules: {
   }
