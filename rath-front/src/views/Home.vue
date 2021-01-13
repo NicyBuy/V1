@@ -4,7 +4,11 @@
   </div>
   <div class="main">
     <div class="contenido">
+<<<<<<< HEAD
       <h2>Equisde con dde</h2>
+=======
+      <h2  >LO MAS NUEVO {{ numero.n2 }}</h2>
+>>>>>>> 2577ecdc09476ef598ac74cd8a9e3a4443ad4ab3
 
       <div class="cont__lo-mas-nuevo">
         <ContProductos />
@@ -13,7 +17,7 @@
       <div class="division"></div>
 
       <h2>CATEGORIAS</h2>
-      <div class="cont__Categorias">
+      <div  class="cont__Categorias">
         <BtnCategoria />
         <BtnCategoria />
         <BtnCategoria />
@@ -22,13 +26,10 @@
         <BtnCategoria />
       </div>
 
-      <div class="muestra__Categorias">
-
-      </div>
-
+      <div @click = "GetProducts" class="muestra__Categorias"></div>
     </div>
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 
@@ -39,6 +40,7 @@ import Banner from '@/components/Banner.vue'
 import ContProductos from '../components/ContProductos.vue'
 import BtnCategoria from '../components/BtnCategoria.vue'
 import Footer from '../components/Footer.vue'
+import {mapState, mapActions} from 'vuex';
 
 export default {
   name: 'Home',
@@ -48,7 +50,18 @@ export default {
     ContProductos,
     BtnCategoria,
     Footer
-  }
+  },
+
+  computed: {
+    ...mapState(['numero', 'fruta']),
+    // ...mapActions(['GetProducts']),
+  },
+
+
+  // created() {
+  //   this.GetProducts
+  // }
+ 
 }
 </script>
 
@@ -56,19 +69,18 @@ export default {
 
 <style lang="scss" scoped>
 // VARS
-$gris-0: #EBEBEB;
-$gris-1: #DEDEDE;
-$gris-2: #B9B9B9;
+$gris-0: #ebebeb;
+$gris-1: #dedede;
+$gris-2: #b9b9b9;
 $gris-3: #878787;
-$fondo: #F6F6F6;
-$texto: #3B3B3B;
-$morado: #8847E2;
+$fondo: #f6f6f6;
+$texto: #3b3b3b;
+$morado: #8847e2;
 
 .main {
   width: 100%;
   display: flex;
   justify-content: center;
-
 
   .contenido {
     width: 92%;
@@ -95,7 +107,7 @@ $morado: #8847E2;
       flex-wrap: wrap;
     }
 
-    .muestra__Categorias{
+    .muestra__Categorias {
       width: 100%;
       height: 600px;
       background: $gris-2;
