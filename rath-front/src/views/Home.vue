@@ -4,11 +4,7 @@
   </div>
   <div class="main">
     <div class="contenido">
-<<<<<<< HEAD
-      <h2>Equisde con dde</h2>
-=======
       <h2  >LO MAS NUEVO {{ numero.n2 }}</h2>
->>>>>>> 2577ecdc09476ef598ac74cd8a9e3a4443ad4ab3
 
       <div class="cont__lo-mas-nuevo">
         <ContProductos />
@@ -29,7 +25,7 @@
       <div @click = "GetProducts" class="muestra__Categorias"></div>
     </div>
   </div>
-  <Footer />
+  <Footer></Footer>
 </template>
 
 
