@@ -1,14 +1,15 @@
 <template>
   <div>
     <div class="cont__Productos">
-      <Producto v-for="num in 8" :key="num"></Producto>
+      <Producto
+      :nombre="productos[index].title "
+      :precio="productos[index].price"
+       v-for="(num, index) in productos" :key="index"></Producto>
     </div>
-    {{ productos[0].price }}
+    
     <div class="ver-mas" v-on:click="pamostrar">ver mas</div>
   </div>
 </template>
-
-
 
 
 <script>
@@ -34,11 +35,18 @@ export default {
   },
 
   methods: {
+
     pamostrar: function () {
       console.log("desde el mounted");
       this.contProducts = this.productos;
       console.log(this.productos);
     },
+
+
+    // Metodo con el cual se clasificaran los productos
+    Colador(){
+      
+    }
   },
 
   created() {
