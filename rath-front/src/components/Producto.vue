@@ -18,7 +18,7 @@
 export default {
   props: {
     nombre: String,
-    precio: String
+    precio: Number
   },
 }
 </script>

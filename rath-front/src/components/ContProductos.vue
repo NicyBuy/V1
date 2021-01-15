@@ -2,12 +2,12 @@
   <div>
     <div class="cont__Productos">
       <Producto
-      :nombre="productos[index].title "
-      :precio="productos[index].price"
-       v-for="(num, index) in productos" :key="index"></Producto>
+      :nombre="parcial_Products[index].title "
+      :precio="parcial_Products[index].price"
+       v-for="(num, index) in parcial_Products" :key="index"></Producto>
     </div>
     
-    <div class="ver-mas" v-on:click="pamostrar">ver mas</div>
+    <div class="ver-mas" v-on:click="moreProds">ver mas</div>
   </div>
 </template>
 
@@ -30,16 +30,17 @@ export default {
   },
 
   computed: {
-    ...mapState(["numero", "fruta", "productos"]),
+    ...mapState(["numero", "fruta", "parcial_Products"]),
     ...mapActions(["GetProducts"]),
   },
 
   methods: {
-
+    
+    ...mapMutations(['moreProds']),
     pamostrar: function () {
       console.log("desde el mounted");
-      this.contProducts = this.productos;
-      console.log(this.productos);
+      this.contProducts = this.parcial_Products;
+      console.log(this.parcial_Products);
     },
 
 

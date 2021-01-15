@@ -11,13 +11,31 @@ export default createStore({
       n2: 30
     },
     fruta: "manzanin",
-    productos: [1,2,3],
+    all_Productos: [],
+    parcial_Products:[],
+    control_vmore:0
   },
   mutations: {
-    setprods(state, payload) {
+    setProds(state, payload) {
       console.log('buenos dias');
-      state.productos = payload 
-      console.log(state.productos);
+      state.all_Productos = payload 
+      console.log(state.all_Productos);
+      for (let i = state.control_vmore; i < state.control_vmore+2; i++) {
+        state.parcial_Products[i] = state.all_Productos[i];
+      }
+      state.control_vmore +=2;
+      console.log(state.parcial_Products);
+      
+    },
+    moreProds(state){
+      if(state.control_vmore < state.all_Productos.length){
+        for (let i = state.control_vmore; i < state.control_vmore+2; i++) {
+          state.parcial_Products.push(state.all_Productos[i])
+        }
+        state.control_vmore += 2;
+        console.log('se ejecuto moreProds')
+        console.log(state.parcial_Products)
+      }else console.log('no hay mas por mostrar wacho')
     }
   },
 
@@ -27,7 +45,7 @@ export default createStore({
         const res = await axios.get(`http://www.rath-api.online/getproducts`)
         const resDB = await res.data;
         console.log(resDB)
-        commit('setprods', resDB)
+        commit('setProds', resDB)
       } catch (error) {
         console.log(error);
       }
