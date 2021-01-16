@@ -1,9 +1,11 @@
 <template>
+<div>
+
 <div class="cont__Imagen"></div>
 <div class="main">
   <div class="contenido">
     <div class="nombre-producto">
-      Chayomi Redmi
+      Chayomi Redmi -- {{id}} -- {{pruebaState}}
     </div>
     <p class="descripcion-prodcuto">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quas repellat voluptas porro numquam modi
@@ -37,19 +39,36 @@
 
   <Recomendados/>
 </div>
-
 <Footer/>
+</div>
+
 </template>
 
 
 
 <script>
+
 import Recomendados from '../../components/Recomendados.vue'
 import Footer from '../../components/Footer.vue'
+import { mapState, mapActions, mapMutations } from "vuex";
 export default {
   components: {
     Recomendados,
     Footer
+  },
+  data() {
+    return {
+      id: this.$route.params.id
+    }
+  },
+  computed:{
+    ...mapState(["pruebaState"]),
+  },
+  methods: {
+    ...mapActions(["GetOne"])
+  },
+  created() {
+    this.GetOne(this.id)
   },
 }
 </script>

@@ -4,6 +4,7 @@
       <Producto
       :nombre="parcial_Products[index].title "
       :precio="parcial_Products[index].price"
+      :id="parcial_Products[index]._id"
        v-for="(num, index) in parcial_Products" :key="index"></Producto>
     </div>
     
@@ -37,11 +38,6 @@ export default {
   methods: {
     
     ...mapMutations(['moreProds']),
-    pamostrar: function () {
-      console.log("desde el mounted");
-      this.contProducts = this.parcial_Products;
-      console.log(this.parcial_Products);
-    },
 
 
     // Metodo con el cual se clasificaran los productos

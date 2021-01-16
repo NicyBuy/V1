@@ -17,8 +17,9 @@ const routes = [
 
   //PRODUCTO ESPECIFICO
   {
-    path: '/ProductoEspecifico',
+    path: '/productoespecifico/:id',
     name: 'ProductoEspecifico',
+    //props: true,
     component: () => import( '../views/generals/ProductoEspecifico.vue')
   },
 

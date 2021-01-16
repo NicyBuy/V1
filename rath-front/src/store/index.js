@@ -13,7 +13,8 @@ export default createStore({
     fruta: "manzanin",
     all_Productos: [],
     parcial_Products:[],
-    control_vmore:0
+    control_vmore:0,
+    pruebaState:[]
   },
   mutations: {
     setProds(state, payload) {
@@ -36,6 +37,11 @@ export default createStore({
         console.log('se ejecuto moreProds')
         console.log(state.parcial_Products)
       }else console.log('no hay mas por mostrar wacho')
+    },
+    loadOne(state, payload){
+      console.log('buenos dias');
+      state.pruebaState = payload 
+      console.log(state.pruebaState);
     }
   },
 
@@ -44,7 +50,6 @@ export default createStore({
       try {
         const res = await axios.get(`http://www.rath-api.online/getproducts`)
         const resDB = await res.data;
-        console.log(resDB)
         commit('setProds', resDB)
       } catch (error) {
         console.log(error);
@@ -53,7 +58,24 @@ export default createStore({
 
       //.then(response => response.data)
       //.then(productos => context.commit('AgruparProd',productos));
-    }
+    },
+    async GetOne({commit}, shit) {
+      console.log(shit)
+      console.log('se mostro shit')
+      try {
+        const res = await axios.get(`http://www.rath-api.online/`+shit);
+        const resDB = await res.data.product;
+        console.log(resDB)
+        commit('loadOne', resDB)
+      } catch (error) {
+        console.log(error);
+      }
+
+
+      //.then(response => response.data)
+      //.then(productos => context.commit('AgruparProd',productos));
+    },
+    
   },
   modules: {}
 })
