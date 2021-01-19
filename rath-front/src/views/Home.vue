@@ -1,16 +1,15 @@
 <template>
   <div class="home">
-    <Banner />
-  </div>
+
+    <div class="img__Fondo">
+      <img :src="imgFondo" alt="">
+    </div>
+
+
+    <Banner/>
+  
   <div class="main">
     <div class="contenido">
-      <h2>Equisde con dde</h2>
-
-      <div class="cont__lo-mas-nuevo">
-        <ContProductos />
-      </div>
-
-      <div class="division"></div>
 
       <h2>CATEGORIAS</h2>
       <div class="cont__Categorias">
@@ -22,11 +21,19 @@
         <BtnCategoria />
       </div>
 
-      <div class="muestra__Categorias">
+      <h2>Equisde con dde</h2>
 
+      <div class="cont__lo-mas-nuevo">
+        <ContProductos />
       </div>
 
+      <div class="division"></div>
+
+      
+
+
     </div>
+  </div>
   </div>
   <Footer/>
 </template>
@@ -40,6 +47,9 @@ import ContProductos from '../components/ContProductos.vue'
 import BtnCategoria from '../components/BtnCategoria.vue'
 import Footer from '../components/Footer.vue'
 
+//IMAGENES
+import imgFondo from "../assets/nicybuy/Banners/HomeBanner.png"
+
 export default {
   name: 'Home',
   components: {
@@ -48,7 +58,13 @@ export default {
     ContProductos,
     BtnCategoria,
     Footer
-  }
+  },
+
+  data() {
+    return {
+      imgFondo: imgFondo
+    }
+  },
 }
 </script>
 
@@ -63,6 +79,22 @@ $gris-3: #878787;
 $fondo: #F6F6F6;
 $texto: #3B3B3B;
 $morado: #8847E2;
+
+.img__Fondo{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(75px);
+
+  img{
+    width: 150%;
+    height: 100%;
+
+  }
+}
 
 .main {
   width: 100%;
@@ -93,6 +125,7 @@ $morado: #8847E2;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 50px;
     }
 
     .muestra__Categorias{
