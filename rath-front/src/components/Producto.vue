@@ -44,6 +44,7 @@ export default {
   box-shadow: 10px 10px 14px -16px rgba(0, 0, 0, 0.19);
   overflow: hidden;
   text-decoration: none;
+  transition: 0.5s;
 
   .cont__Img {
     width: 100%;

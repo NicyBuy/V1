@@ -59,11 +59,11 @@ export default createStore({
       //.then(response => response.data)
       //.then(productos => context.commit('AgruparProd',productos));
     },
-    async GetOne({commit}, shit) {
-      console.log(shit)
+    async GetOne({commit}, payload) {
+      console.log(payload)
       console.log('se mostro shit')
       try {
-        const res = await axios.get(`http://www.rath-api.online/`+shit);
+        const res = await axios.get(`http://www.rath-api.online/`+payload);
         const resDB = await res.data.product;
         console.log(resDB)
         commit('loadOne', resDB)
