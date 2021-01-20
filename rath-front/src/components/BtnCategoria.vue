@@ -12,7 +12,7 @@ export default {
 button {
     width: 160px;
     height: 50px;
-    background: #DEDEDE;
+    background: $nicybuy__gris-1;
     border: none;
     border-radius: 9px;
     margin-bottom: 20px;

@@ -1,10 +1,11 @@
 <template>
 <div class="cont__Imagen"></div>
 <div class="main">
-  <div class="contenido">
+  <div class="contenido-principal">
     <div class="nombre-producto">
       Chayomi Redmi
     </div>
+
     <div class="descripcion-producto">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quas repellat voluptas porro numquam modi
       sapiente, qui iusto laboriosam non quibusdam dignissimos et libero. Omnis nam distinctio fuga consequuntur alias!
@@ -12,7 +13,7 @@
       <br>
       <button class="saber-mas">Saber mas</button>
     </div>
-    
+
     <div class="cont__Imgs">
       <div class="cont-Img"></div>
       <div class="cont-Img"></div>
@@ -21,27 +22,28 @@
     </div>
 
   </div>
-  <div class="ver-mas-detalles">
 
+
+  <div class="ver-mas-detalles">
     <button>
       Mas Detalles
     </button>
-
   </div>
 
   <button class="Btn-Comprar">
-  COMPRAR
-</button>
+    COMPRAR
+  </button>
 
   <div class="cont__Terminos">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, esse. Perferendis odio voluptatum error <a href="#">Garantia y Envios</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, esse. Perferendis odio voluptatum error <a
+        href="#">Garantia y Envios</a>
     </p>
   </div>
 
-  <Recomendados/>
+  <Recomendados />
 </div>
 
-<Footer/>
+<Footer />
 </template>
 
 
@@ -61,52 +63,60 @@ export default {
 
 <style lang="scss" scoped>
 
-.cont__Imagen{
+.cont__Imagen {
   width: 100%;
   height: 40vh;
-  background:  $gris-3;
+  background: $nicybuy__gris-3;
   z-index: -1;
-  transform: translateY(30px);
 }
 
 
-.main{
+.main {
   width: 100%;
   height: 1200px;
-  background:#EBEBEB;
+  background: $nicybuy__fondo;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   border-radius: 20px 20px 0px 0px;
- 
-  .contenido{
+  transform: translateY(-30px);
+
+  .contenido-principal {
     width: 90%;
     margin-top: 40px;
 
-    .nombre-producto{
-      font-size: 25px;
-      font-family: sans-serif;
-      font-weight: 700;
-      color: $morado;
+    .saber-mas {
+
+      border: none;
+      background: none;
+      color: $nicybuy__morado;
+
     }
 
-    .descripcion-producto{
-      font-size: 15px;
+    .nombre-producto {
+      font-size: $mobile__big;
       font-family: sans-serif;
+      font-weight: 700;
+      color: $nicybuy__morado;
+    }
+
+    .descripcion-producto {
+      font-size: $mobile__small;
+      font-family: $nicybuy__font-family;
       font-weight: 500;
       margin-top: 5px;
     }
 
-    a{
-      font-size: 15px;
-      font-family: sans-serif;
-      color: #8847E2;
+    a {
+      font-size: $mobile__small;
+      font-family: $nicybuy__font-family;
+      color: $nicybuy__morado;
       font-weight: 700;
     }
 
-    .cont__Imgs{
+    .cont__Imgs {
       width: 100%;
       height: 70px;
       margin-top: 30px;
@@ -114,76 +124,78 @@ export default {
       justify-content: space-between;
       align-items: center;
 
-      .cont-Img{
+      .cont-Img {
         width: 20%;
         height: 100%;
-        background: #B9B9B9;
+        background: $nicybuy__gris-2;
         border-radius: 7px;
       }
     }
 
-    
-   
+
+
   }
 
-  .ver-mas-detalles{
-      width: 100%;
-      height: 60px;
-      background: #DEDEDE;
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .ver-mas-detalles {
+    width: 100%;
+    height: 60px;
+    background: $nicybuy__gris-1;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        button{
-          width: 90%;
-          height: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border: none;
-          background: #DEDEDE;
-          cursor: pointer;
-          color: #777777;
-          font-size: 17px;
-          
-          font-family: sans-serif;
-        }
-      
+    button {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      background: $nicybuy__gris-1;
+      cursor: pointer;
+      color: #777777;
+      font-size: $mobile__normal;
+
+      font-family: $nicybuy__font-family;
     }
 
-    .cont__Terminos{
-      width: 100%;
-      height: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
 
-      p{
-        width: 90%;
-        font-family: sans-serif;
-        font-size: 15px;
-        a{
-          color: black;
-          font-weight: 700;
-        } 
-      }  
-    } 
+  .cont__Terminos {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .Btn-Comprar{
-      width: 150px;
-      height: 50px;
-      font-family: sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      background: #8847E2;
-      border: none;
-      color: white;
-      border-radius: 10px;
-      margin-top: 30px;
-      align-self: flex-start;
-      margin-left: 20px;
-    } 
+    p {
+      width: 90%;
+      font-family: $nicybuy__font-family;
+      font-size: $mobile__small;
+      color: $nicybuy__texto;
+
+      a {
+        color: $nicybuy__texto;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .Btn-Comprar {
+    width: 150px;
+    height: 50px;
+    font-family: $nicybuy__font-family;
+    font-size: 18px;
+    font-weight: 700;
+    background: $nicybuy__morado;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
 }
 
 

@@ -27,69 +27,62 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// VARS
-$gris-0: #EBEBEB ;
-$gris-1: #DEDEDE;
-$gris-2: #B9B9B9;
-$gris-3: #878787;
-$fondo: #F6F6F6;
-$texto: #3B3B3B;
-$morado: #8847E2;
-.Banner{
+
+.Banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .cont__wave {
     width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+    svg {
+      fill: $nicybuy__morado;
+    }
+  }
+
+  .cont__Destacados {
+    width: 100%;
+    height: 450px;
+    margin-top: 0px;
+    background: $nicybuy__morado;
     display: flex;
     flex-direction: column;
-    position: relative;
-   
-   .cont__wave{
-     width: 100%;
-     overflow: hidden;
-     margin: 0px;
-     padding: 0px;
+    align-items: center;
+    justify-content: center;
 
-     svg{
-       fill: $morado;
-     }
-   }
+    .Destacados {
+      width: 90%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-   .cont__Destacados{
-     width: 100%;
-     height: 450px;
-     margin-top: 0px;
-     background: $morado;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-
-     .Destacados{
-       width: 90%;
-       height: 70%;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       
-       .producto-destacado{
+      .producto-destacado {
         height: 270px;
         width: 200px;
         background: white;
         border-radius: 9px;
-       }
-     }
+      }
+    }
 
-     h2{
-       font-size: 20px;
-       font-family: sans-serif;
-       font-weight: 700;
-       color: white;
-     }
+    h2 {
+      font-size: $mobile__normal2;
+      font-family: $nicybuy__font-family;
+      font-weight: 700;
+      color: white;
+    }
 
-     h3{
-       font-size: 18px;
-       font-family: sans-serif;
-       font-weight: 700;
-       color: white;
-     }
-   }
+    h3 {
+      font-size: $mobile__normal;
+      font-family: $nicybuy__font-family;
+      font-weight: 700;
+      color: white;
+    }
+  }
 }
 </style>

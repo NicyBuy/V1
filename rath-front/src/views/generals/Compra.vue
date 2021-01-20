@@ -45,11 +45,11 @@ export default {
         .Paso-1{
             width: 90%;
             height: 90%;
-            font-family: sans-serif;
+            font-family: $nicybuy__font-family;
 
             .titulo{
-                font-size: 20px;
-                color: #8847E2;
+                font-size: $mobile__normal2;
+                color: $nicybuy__morado;
                 font-weight: 700;
                 margin-bottom: 10px;  
             }

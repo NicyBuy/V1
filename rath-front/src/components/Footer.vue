@@ -12,6 +12,6 @@ export default {
 footer{
     width: 100%;
     height: 300px;
-    background: #878787;
+    background: $nicybuy__morado;
 }
 </style>

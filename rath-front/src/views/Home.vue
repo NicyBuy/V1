@@ -46,7 +46,7 @@ import imgFondo from "../assets/nicybuy/Banners/HomeBanner.png"
 export default {
   name: 'Home',
   components: {
-    Nav, 
+    Nav,
     Banner,
     ContProductos,
     BtnCategoria,
@@ -64,16 +64,8 @@ export default {
 
 
 <style lang="scss" scoped>
-// VARS
-$gris-0: #EBEBEB;
-$gris-1: #DEDEDE;
-$gris-2: #B9B9B9;
-$gris-3: #878787;
-$fondo: #F6F6F6;
-$texto: #3B3B3B;
-$morado: #8847E2;
 
-.img__Fondo{
+.img__Fondo {
   width: 100%;
   height: 350px;
   overflow: hidden;
@@ -81,7 +73,7 @@ $morado: #8847E2;
   justify-content: center;
   align-items: center;
 
-  img{
+  img {
     width: 150%;
     height: 89%;
     transform: translateY(30px);
@@ -99,16 +91,16 @@ $morado: #8847E2;
     width: 92%;
 
     h2 {
-      font-size: 25px;
-      font-family: sans-serif;
+      font-size: $mobile__big;
+      font-family: nicybuy__font-family;
       font-weight: 700;
-      color: $texto;
+      color: $nicybuy__texto;
     }
 
     .division {
       width: 100%;
       height: 1px;
-      background: $gris-1;
+      background: $nicybuy__gris-1;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -121,10 +113,10 @@ $morado: #8847E2;
       margin-bottom: 50px;
     }
 
-    .muestra__Categorias{
+    .muestra__Categorias {
       width: 100%;
       height: 600px;
-      background: $gris-2;
+      background: $nicybuy__gris-2;
       margin-top: 20px;
     }
   }
