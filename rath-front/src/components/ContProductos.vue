@@ -1,9 +1,18 @@
 <template>
   <div class="cont__Productos">
-      <Producto/>
-      <Producto/>
-      <Producto/>
-      <Producto/>
+      <Producto
+      Titulo="Realme 6 de 4GB de RAM Y 128GB memoria"
+      :Imagen="imagenDePrueba"
+      Precio="$299.99"
+       />
+
+      <Producto />
+      <Producto />
+      <Producto />
+      <Producto />
+      <Producto />
+      <Producto />
+      <Producto />
   </div>
   <div class="ver-mas">
       ver mas
@@ -12,10 +21,19 @@
 
 <script>
 import Producto from '../components/Producto.vue'
+import imagenDePrueba from '../assets/nicybuy/productos/Realme_6.png'
 export default {
 components: {
     Producto,
+    
 },
+
+data() {
+    return {
+        imagenDePrueba: imagenDePrueba,
+    }
+},
+
 }
 </script>
 
@@ -31,7 +49,6 @@ $morado: #8847E2;
 
 .cont__Productos{
     width: 345px;
-    height: 500px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

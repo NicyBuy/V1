@@ -5,11 +5,14 @@
     <div class="nombre-producto">
       Chayomi Redmi
     </div>
-    <p class="descripcion-prodcuto">
+    <div class="descripcion-producto">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quas repellat voluptas porro numquam modi
       sapiente, qui iusto laboriosam non quibusdam dignissimos et libero. Omnis nam distinctio fuga consequuntur alias!
-    </p>
-    <a href="#">Saber mas</a>
+      <br>
+      <br>
+      <button class="saber-mas">Saber mas</button>
+    </div>
+    
     <div class="cont__Imgs">
       <div class="cont-Img"></div>
       <div class="cont-Img"></div>
@@ -61,7 +64,7 @@ export default {
 .cont__Imagen{
   width: 100%;
   height: 40vh;
-  background:  #B9B9B9;
+  background:  $gris-3;
   z-index: -1;
   transform: translateY(30px);
 }
@@ -86,13 +89,14 @@ export default {
       font-size: 25px;
       font-family: sans-serif;
       font-weight: 700;
-      color: #8847E2;
+      color: $morado;
     }
 
-    p{
+    .descripcion-producto{
       font-size: 15px;
       font-family: sans-serif;
       font-weight: 500;
+      margin-top: 5px;
     }
 
     a{

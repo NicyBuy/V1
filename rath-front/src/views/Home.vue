@@ -5,35 +5,28 @@
       <img :src="imgFondo" alt="">
     </div>
 
+    <Banner />
 
-    <Banner/>
-  
-  <div class="main">
-    <div class="contenido">
+    <div class="main">
+      <div class="contenido">
 
-      <h2>CATEGORIAS</h2>
-      <div class="cont__Categorias">
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
+        <h2>CATEGORIAS</h2>
+        <div class="cont__Categorias">
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+        </div>
+
+        <h2>Puede que te guste</h2>
+        <div class="cont__Productos">
+          <ContProductos />
+        </div>
+        <br>
       </div>
-
-      <h2>Equisde con dde</h2>
-
-      <div class="cont__lo-mas-nuevo">
-        <ContProductos />
-      </div>
-
-      <div class="division"></div>
-
-      
-
-
     </div>
-  </div>
   </div>
   <Footer/>
 </template>
@@ -82,16 +75,16 @@ $morado: #8847E2;
 
 .img__Fondo{
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(75px);
 
   img{
     width: 150%;
-    height: 100%;
+    height: 89%;
+    transform: translateY(30px);
 
   }
 }

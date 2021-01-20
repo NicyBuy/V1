@@ -1,21 +1,13 @@
 <template>
   <div class="Banner">
-    <div class="cont__wave">
-      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-        <path d="M-12.13,22.20 C180.86,192.92 717.55,-12.33 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style="stroke: none; "></path>
-      </svg>
-    </div>
-
     <div class="cont__Destacados">
-<h2>LO MEJOR PARA TI</h2>
-<div class="Destacados">
-  <div class="Producto">
+      <div class="Destacados">
+        <h2>LO MEJOR PARA TI</h2>
+        <div class="producto-destacado">
+        </div>
 
-  </div>
-  
-</div>
-<h3>ver mas</h3>
+      </div>
+      <h3>ver mas</h3>
     </div>
 
     <div class="cont__wave">
@@ -68,19 +60,20 @@ $morado: #8847E2;
      display: flex;
      flex-direction: column;
      align-items: center;
+     justify-content: center;
 
      .Destacados{
        width: 90%;
        height: 70%;
        display: flex;
-       justify-content: center;
+       flex-direction: column;
        align-items: center;
        
-       .Producto{
-         width: 200px;
-         height: 280px;
-         background: white;
-         border-radius: 9px;
+       .producto-destacado{
+        height: 270px;
+        width: 200px;
+        background: white;
+        border-radius: 9px;
        }
      }
 
