@@ -66,6 +66,7 @@ export default {
     background: rgba(255, 255, 255, 0.747);
     grid-area: 2/1/4/2;
     padding: 4px;
+    color: black;
   }
 
   .cont__Precio {
