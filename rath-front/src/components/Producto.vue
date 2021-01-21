@@ -40,7 +40,7 @@ export default {
 .Producto {
   width: 160px;
   height: 210px;
-
+  background: white;
   border-radius: 9px;
   margin-bottom: 23px;
   -webkit-box-shadow: 10px 10px 14px -16px rgba(0, 0, 0, 0.19);
