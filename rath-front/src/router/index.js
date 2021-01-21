@@ -48,6 +48,12 @@ const routes = [
     component: () => import( '../views/Themes/Theme_0/informacion.vue')
   },
 
+  {
+    path: '/theme_0-pespecifico',
+    name: 'Theme_0-pespecifico',
+    component: () => import( '../views/Themes/Theme_0/ProductoEspecifico.vue')
+  },
+
 ]
 
 const router = createRouter({
