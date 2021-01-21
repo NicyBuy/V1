@@ -36,8 +36,6 @@ const routes = [
     component: () => import( '../views/Themes/Theme_0/home.vue')
   },
 
-  
-
 ]
 
 const router = createRouter({

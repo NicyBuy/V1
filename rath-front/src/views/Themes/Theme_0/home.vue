@@ -26,6 +26,23 @@
 
           <div class="division"></div>
 
+          <div class="que-somos">
+              <div class="que-somos__titulo">
+                  Que somos?
+              </div>
+              <div class="que-somos__info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores ad hic praesentium ex eius
+                  unde enim labore impedit, itaque non tempore sunt id. Optio adipisci nostrum maiores asperiores
+                  numquam, possimus quam quia sed doloremque odit error porro quo repellendus ab id distinctio
+                  laboriosam rerum autem deserunt, animi mollitia reiciendis!
+                  <br><br>
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores ad hic praesentium ex eius
+                  unde enim labore impedit, itaque non tempore sunt id. Optio adipisci nostrum maiores asperiores
+                  numquam, possimus quam quia sed doloremque odit error porro quo repellendus ab id distinctio
+                  laboriosam rerum autem deserunt, animi mollitia reiciendis!
+              </div>
+          </div>
       </div>
   </div>
 </template>
@@ -119,6 +136,21 @@ export default {
     background: rgba(0, 0, 0, 0.164);
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.que-somos{
+    width: 90%;
+    color: white;
+
+    .que-somos__titulo{
+        font-size: $mobile__big;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+
 }
 
 </style>
