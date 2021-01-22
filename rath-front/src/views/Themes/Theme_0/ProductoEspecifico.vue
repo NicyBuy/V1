@@ -3,7 +3,7 @@
 <div class="main">
   <div class="contenido-principal">
     <div class="nombre-producto">
-      Chayomi Redmi
+      Hola Wapo
     </div>
 
     <div class="descripcion-producto">
@@ -60,9 +60,9 @@
 
 
 <script>
-import Recomendados from '../../components/Recomendados.vue'
-import Footer from '../../components/Footer.vue'
-import Garantia from '../../components/other/Garantia.vue'
+import Recomendados from '../../../components/Recomendados.vue'
+import Footer from '../../../components/Footer.vue'
+import Garantia from '../../../components/other/Garantia.vue'
 
 export default {
   components: {
@@ -87,7 +87,6 @@ export default {
 
 .main {
   width: 100%;
-  height: 1200px;
   background: $nicybuy__fondo;
   z-index: 2;
   display: flex;
@@ -97,6 +96,8 @@ export default {
   border-radius: 20px 20px 0px 0px;
   transform: translateY(-30px);
   font-family: $nicybuy__font-family;
+  background: rgb(255, 106, 131);
+  color: white;
 
   .contenido-principal {
     width: 90%;
@@ -106,7 +107,7 @@ export default {
 
       border: none;
       background: none;
-      color: $nicybuy__morado;
+      color: rgb(255, 232, 130);
       font-weight: 700;
 
     }
@@ -115,7 +116,7 @@ export default {
       font-size: $mobile__big;
       font-family: sans-serif;
       font-weight: 700;
-      color: $nicybuy__morado;
+      color: rgb(255, 232, 130);
     }
 
     .descripcion-producto {
@@ -128,7 +129,7 @@ export default {
     a {
       font-size: $mobile__small;
       font-family: $nicybuy__font-family;
-      color: $nicybuy__morado;
+      color: white;
       font-weight: 700;
     }
 
@@ -156,10 +157,10 @@ export default {
 
      .Tienda__nombre{
        margin-left: 10px;
-       background: $nicybuy__morado;
+       background: rgb(255, 232, 130);
        padding: 10px;
        border-radius: 7px;
-      color: white;
+      color: black;
       text-decoration: none;
      }
     }

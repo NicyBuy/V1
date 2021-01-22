@@ -1,31 +1,31 @@
 <template>
   <div class="home">
+
+    <div class="img__Fondo">
+      <img :src="imgFondo" alt="">
+    </div>
+
     <Banner />
-  </div>
-  <div class="main">
-    <div class="contenido">
-      <h2>LO MAS NUEVO</h2>
 
-      <div class="cont__lo-mas-nuevo">
-        <ContProductos />
+    <div class="main">
+      <div class="contenido">
+
+        <h2>CATEGORIAS</h2>
+        <div class="cont__Categorias">
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+          <BtnCategoria />
+        </div>
+
+        <h2>Puede que te guste</h2>
+        <div class="cont__Productos">
+          <ContProductos />
+        </div>
+        <br>
       </div>
-
-      <div class="division"></div>
-
-      <h2>CATEGORIAS</h2>
-      <div class="cont__Categorias">
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-        <BtnCategoria />
-      </div>
-
-      <div class="muestra__Categorias">
-
-      </div>
-
     </div>
   </div>
   <Footer/>
@@ -40,29 +40,46 @@ import ContProductos from '../components/ContProductos.vue'
 import BtnCategoria from '../components/BtnCategoria.vue'
 import Footer from '../components/Footer.vue'
 
+//IMAGENES
+import imgFondo from "../assets/nicybuy/Banners/HomeBanner.png"
+
 export default {
   name: 'Home',
   components: {
-    Nav, 
+    Nav,
     Banner,
     ContProductos,
     BtnCategoria,
     Footer
-  }
+  },
+
+  data() {
+    return {
+      imgFondo: imgFondo
+    }
+  },
 }
 </script>
 
 
 
 <style lang="scss" scoped>
-// VARS
-$gris-0: #EBEBEB;
-$gris-1: #DEDEDE;
-$gris-2: #B9B9B9;
-$gris-3: #878787;
-$fondo: #F6F6F6;
-$texto: #3B3B3B;
-$morado: #8847E2;
+
+.img__Fondo {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 150%;
+    height: 89%;
+    transform: translateY(30px);
+
+  }
+}
 
 .main {
   width: 100%;
@@ -74,16 +91,16 @@ $morado: #8847E2;
     width: 92%;
 
     h2 {
-      font-size: 25px;
-      font-family: sans-serif;
+      font-size: $mobile__big;
+      font-family: nicybuy__font-family;
       font-weight: 700;
-      color: $texto;
+      color: $nicybuy__texto;
     }
 
     .division {
       width: 100%;
       height: 1px;
-      background: $gris-1;
+      background: $nicybuy__gris-1;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -93,12 +110,13 @@ $morado: #8847E2;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 50px;
     }
 
-    .muestra__Categorias{
+    .muestra__Categorias {
       width: 100%;
       height: 600px;
-      background: $gris-2;
+      background: $nicybuy__gris-2;
       margin-top: 20px;
     }
   }

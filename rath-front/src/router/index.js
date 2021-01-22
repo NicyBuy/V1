@@ -27,9 +27,32 @@ const routes = [
     path: '/Compra',
     name: 'Compra',
     component: () => import( '../views/generals/Compra.vue')
-  }
+  },
 
+  //Themes Home
+  {
+    path: '/theme_0',
+    name: 'Theme_0',
+    component: () => import( '../views/Themes/Theme_0/home.vue')
+  },
 
+  {
+    path: '/theme_0-productos',
+    name: 'Theme_0-productos',
+    component: () => import( '../views/Themes/Theme_0/productos.vue')
+  },
+
+  {
+    path: '/theme_0-info',
+    name: 'Theme_0-info',
+    component: () => import( '../views/Themes/Theme_0/informacion.vue')
+  },
+
+  {
+    path: '/theme_0-pespecifico',
+    name: 'Theme_0-pespecifico',
+    component: () => import( '../views/Themes/Theme_0/ProductoEspecifico.vue')
+  },
 
 ]
 

@@ -1,77 +1,46 @@
 <template>
-  <nav>
-      <div class="Logo">
-          <img src="../assets/nicybuy.jpg" alt="">
-      </div>
+  <div class="NavButton">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+  </div>
 
-      <div class="Nombre">
-          NICYBUY
-      </div>
-  </nav>
 </template>
 
+
+
 <script>
-import NavButton from '@/components/NavButton.vue'
-
 export default {
-
-components: {
-    NavButton,
-},
 }
 </script>
 
+
+
 <style lang="scss" scoped>
-// VARS
-$gris-0: #EBEBEB;
-$gris-1: #DEDEDE;
-$gris-2: #B9B9B9;
-$gris-3: #878787;
-$fondo: #F6F6F6;
-$texto: #3B3B3B;
-$morado: #8847E2;
 
+.NavButton {
+  border-radius: 100%;
+  background: $nicybuy__morado;
+  transition: ease-in-out 0.3s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 
-nav {
-    width: 100%;
-    height: 10vh;
-    background-color: $gris-0;
-    display: flex;
-    justify-content: flex-start;
-    -webkit-box-shadow: 10px 10px 11px -12px rgba(0, 0, 0, 0.21);
-    -moz-box-shadow: 10px 10px 11px -12px rgba(0, 0, 0, 0.21);
-    box-shadow: 10px 10px 11px -12px rgba(0, 0, 0, 0.21);
-    position: fixed;
-    z-index: 10;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  top: 10px;
+  right: 12px;
+  overflow: hidden;
 
+  -webkit-box-shadow: 10px 10px 11px -12px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 11px -12px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 11px -12px rgba(0, 0, 0, 0.21);
 
-    .Nombre {
-        align-self: center;
-        font-size: 25px;
-        font-family: sans-serif;
-        font-weight: 700;
-        margin-left: 10px;
-        color: $morado;
-    }
-
-
-    .Logo {
-        border-radius: 100%;
-        background: white;
-        transition: ease-in-out 0.3s;
-        height: 55px;
-        width: 55px;
-        align-self: center;
-        overflow: hidden;
-        margin-left: 5px;
-
-        img {
-            width: 102%;
-            height: 165%;
-            transform: translateY(-19px);
-            object-fit: cover;
-        }
-    }
+  svg {
+    fill: white;
+  }
 }
 
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <footer></footer>
+  <div class="Banner">
+
+  </div>
 </template>
 
 <script>
@@ -9,9 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-footer{
+.Banner{
     width: 100%;
-    height: 300px;
-    background: $nicybuy__morado;
+    height: 400px;
+    background: $nicybuy__gris-3;
 }
 </style>

@@ -11,47 +11,18 @@
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue'
+import Nav from '../src/components/Nav.vue'
 export default {
   components: {
     Nav,
   },
 }
 </script>
-<style lang="scss" src="@/scss/main.scss">
 
 
-// VARS
-$gris-0: #EBEBEB ;
-$gris-1: #DEDEDE;
-$gris-2: #B9B9B9;
-$gris-3: #878787;
-$fondo: #F6F6F6;
-$texto: #3B3B3B;
-$morado: #8847E2;
+<style lang="scss" src="@/scss/main.scss" scoped>
 
 .fondo{
-  background: $fondo;
+  background: $nicybuy__fondo;
 }
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-// }
-
-// #nav {
-//   padding: 30px;
-// }
-
-// #nav a {
-//   font-weight: bold;
-//   color: #2c3e50;
-// }
-
-// #nav a.router-link-exact-active {
-//   color: #42b983;
-// }
-
 </style>
