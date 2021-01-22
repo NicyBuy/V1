@@ -1,9 +1,6 @@
 <template>
   <div class="Producto">
     <div class="cont__Img">
-<<<<<<< HEAD
-      
-=======
       <img :src="Imagen" alt="">
     </div>
 
@@ -13,16 +10,8 @@
 
     <div class="cont__Precio">
       {{Precio}}
->>>>>>> V1.0.1
     </div>
 
-    <div class="cont__Nombre">
-
-    </div>
-
-    <div class="cont__Precio">
-
-    </div>
   </div>
 </template>
 
@@ -62,25 +51,6 @@ export default {
   overflow: hidden;
   font-family: $nicybuy__font-family;
 
-    .cont__Img{
-      width: 100%;
-      height: 50%;
-      background: #000;
-    }
-
-    .cont__Nombre{
-      width: 100%;
-      height: 25%;
-      background: grey;
-    }
-
-    .cont__Precio{
-      width:100%;
-      height: 25%;
-      background: red;  
-    }
-}
- 
   .cont__Img {
     grid-area: 1/1/4/2;
     overflow: hidden;
@@ -93,10 +63,10 @@ export default {
   }
 
   .cont__Titulo {
-    background: rgba(255, 255, 255, 0.747);
     grid-area: 2/1/4/2;
     padding: 4px;
     color: black;
+    background: white;
   }
 
   .cont__Precio {
@@ -111,4 +81,8 @@ export default {
     align-items: center;
   }
 }
+ 
+  
+
+
 </style>
