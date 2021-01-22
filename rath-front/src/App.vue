@@ -1,5 +1,5 @@
 <template>
-<div class="fondo">
+<div class="  fondo">
 <Nav/>
   <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
@@ -18,9 +18,10 @@ export default {
   },
 }
 </script>
+<style lang="scss" src="@/scss/main.scss" >
+</style>
 
-
-<style lang="scss" src="@/scss/main.scss" scoped>
+<style lang="scss" scoped >
 
 .fondo{
   background: $nicybuy__fondo;

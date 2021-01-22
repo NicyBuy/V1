@@ -112,13 +112,6 @@ export default {
       flex-wrap: wrap;
       margin-bottom: 50px;
     }
-
-    .muestra__Categorias {
-      width: 100%;
-      height: 600px;
-      background: $nicybuy__gris-2;
-      margin-top: 20px;
-    }
   }
 }
 </style>
