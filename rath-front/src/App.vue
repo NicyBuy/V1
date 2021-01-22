@@ -18,8 +18,9 @@ export default {
   },
 }
 </script>
+<style lang="scss" src="@/scss/main.scss">
 
-<style lang="scss" scoped>
+
 // VARS
 $gris-0: #EBEBEB ;
 $gris-1: #DEDEDE;
