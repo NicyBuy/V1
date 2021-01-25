@@ -36,7 +36,6 @@
                   numquam, possimus quam quia sed doloremque odit error porro quo repellendus ab id distinctio
                   laboriosam rerum autem deserunt, animi mollitia reiciendis!
                   <br><br>
-
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores ad hic praesentium ex eius
                   unde enim labore impedit, itaque non tempore sunt id. Optio adipisci nostrum maiores asperiores
                   numquam, possimus quam quia sed doloremque odit error porro quo repellendus ab id distinctio
