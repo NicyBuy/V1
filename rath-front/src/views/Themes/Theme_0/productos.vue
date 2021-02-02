@@ -1,9 +1,10 @@
 <template>
- <Banner/>
+<div class="productos">
+    <Banner/>
     <div class="main">
 
         <h2>CATEGORIAS</h2>
-        <div class="cont__Categorias">
+        <div class="cont__Categories">
           <BtnCategoria />
           <BtnCategoria />
           <BtnCategoria />
@@ -17,6 +18,7 @@
         </div>
 
     </div>
+</div>
  
 </template>
 
@@ -43,7 +45,7 @@ components: {
     background: rgb(255, 106, 131);
     color: white;
 
-    .cont__Categorias {
+    .cont__Categories {
       width: 345px;
       display: flex;
       justify-content: space-between;
