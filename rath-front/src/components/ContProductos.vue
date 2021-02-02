@@ -1,5 +1,6 @@
 <template>
-  <div class="cont__Productos">
+<div class="ContProductos">
+    <div class="cont__Productos">
       <Producto Titulo="Realme 6 de 4GB de RAM Y 128GB memoria" :Imagen="imagenDePrueba" Precio="$299.99" />
       <Producto />
       <Producto />
@@ -12,6 +13,8 @@
   <div class="ver-mas">
       ver mas
   </div>
+</div>
+  
 </template>
 
 <script>
@@ -35,10 +38,38 @@ export default {
 
 <style lang="scss" scoped>
 .cont__Productos {
-    width: 345px;
+    width: 350px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+
+    @media screen and(min-width: 380px) {
+        width: 370px; 
+    }
+
+    @media screen and(min-width: 600px) {
+        width: 545px; 
+    }
+
+    @media screen and(min-width: 850px) {
+        width: 720px; 
+    }
+
+    @media screen and(min-width: 1000px) {
+        width: 900px;
+    }
+
+    @media screen and(min-width: 1300px) {
+        width: 1250px;
+    }
+
+    @media screen and(min-width: 1500px) {
+        width: 1450px;
+    }
+
+    @media screen and(min-width: 1600px) {
+        width: 1550px;
+    }
 }
 
 .ver-mas {

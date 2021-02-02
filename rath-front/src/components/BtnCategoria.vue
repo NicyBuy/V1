@@ -13,6 +13,7 @@ button {
     width: 160px;
     height: 50px;
     background: $nicybuy__gris-1;
+    margin: 5px;
     border: none;
     border-radius: 9px;
     margin-bottom: 20px;

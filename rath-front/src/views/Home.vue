@@ -34,8 +34,10 @@
 
     <div class="main">
       <div class="contenido">
-
-        <h2>CATEGORIAS</h2>
+        <div class="categorias">
+          <div class="categorias__Titulo">
+            CATEGORIAS
+        </div>
         <div class="cont__Categories">
           <BtnCategoria />
           <BtnCategoria />
@@ -44,10 +46,18 @@
           <BtnCategoria />
           <BtnCategoria />
         </div>
+        </div>
+        
 
-        <h2>Puede que te guste</h2>
-        <div class="cont__Productos">
-          <ContProductos />
+       
+        <div class="cont-Productos">
+          <div class="cont-Productos__Titulo">
+            RECOMENDADOS
+          </div>
+          <div class="cont-Productos__Productos">
+            <ContProductos />
+          </div>
+          
         </div>
         <br>
       </div>
@@ -94,6 +104,7 @@ export default {
   width: 100%;
   height: 70vh;
   display: grid;
+  background: white;
   grid: 100% /40% 60%;
 
   @media screen and(max-width: 1410px) {
@@ -236,17 +247,13 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
+  font-family: $nicybuy__font-family;
 
 
   .contenido {
     width: 92%;
 
-    h2 {
-      font-size: $mobile__big;
-      font-family: nicybuy__font-family;
-      font-weight: 700;
-      color: $nicybuy__texto;
-    }
+
 
     .division {
       width: 100%;
@@ -256,13 +263,47 @@ export default {
       margin-bottom: 40px;
     }
 
-    .cont__Categories {
-      width: 345px;
+
+    .categorias{
+      .categorias__Titulo{
+        font-size: $mobile__big;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        
+      }
+
+       .cont__Categories {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       margin-bottom: 50px;
     }
+    }
+
+    .cont-Productos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+      
+
+      .cont-Productos__Titulo{
+        font-size: $mobile__big;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 70px;
+      }
+    }
+   
   }
 }
 </style>

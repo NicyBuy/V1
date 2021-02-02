@@ -42,7 +42,7 @@ export default {
   height: 210px;
   background: white;
   border-radius: 9px;
-  margin-bottom: 23px;
+  margin: 7px;
   -webkit-box-shadow: 10px 10px 14px -16px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 10px 10px 14px -16px rgba(0, 0, 0, 0.19);
   box-shadow: 10px 10px 14px -16px rgba(0, 0, 0, 0.19);
@@ -50,6 +50,16 @@ export default {
   grid: 50% 10% 17% 23%/ 100%;
   overflow: hidden;
   font-family: $nicybuy__font-family;
+
+   @media screen and(min-width: 380px) {
+        margin: 10px;
+    }
+
+    @media screen and(min-width: 850px) {
+        width: 200px;
+        height: 250px;
+
+    }
 
   .cont__Img {
     grid-area: 1/1/4/2;
